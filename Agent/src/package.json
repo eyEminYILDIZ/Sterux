@@ -1,0 +1,23 @@
+{
+  "name": "sterux.agent",
+  "version": "1.0.0",
+  "description": "STERUX.Agent is part of STERUX(Statistic, Error and User Experience Tool)",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Emin Yıldız",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2"
+	"gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.2"
+  }
+}
