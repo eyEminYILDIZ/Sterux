@@ -8,13 +8,13 @@ function STERUXOnLoad() {
     var steruxClientLoginStatus = getSteruxLoginStatusCookie();
     var isUserLogined = (getLoginedUserCookie() == undefined) ? false : true;
 
-    if (steruxClientId == undefined) {
+    if (steruxClientId == undefined) { 
         // client opening the page first time, it have to send user information for getting steruxClientID
         var payload = {
             type:"create",
             steruxClientId:undefined,
             user: GetUserInformations(),
-            dateTime: new Date().toLocaleString("tr-TR"),
+            dateTime: new Date().toJSON(),
         }
         // user login status
         payload.user.isLogined = isUserLogined;
@@ -27,7 +27,7 @@ function STERUXOnLoad() {
         var payload = {
             type:"update",
             steruxClientId:steruxClientId,
-            dateTime: new Date().toLocaleString("tr-TR"),
+            dateTime: new Date().toJSON(),
             user: {},
         }
         // user login status

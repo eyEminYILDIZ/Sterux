@@ -11,7 +11,7 @@ function StatisticOnLoad() {
         type: "open",
         openTime: openTime + "",
         referrer: document.referrer,
-        startTime: new Date().toLocaleString("tr-TR"),
+        startTime: new Date().toJSON(),
     };
     Send_Statistic(payload);
 
@@ -23,7 +23,7 @@ function StatisticOnUnLoad() {
     var payload = {
         type: "close",
         openTime: openTime,
-        endTime: new Date().toLocaleString("tr-TR"),
+        endTime: new Date().toJSON(),
     };
     Send_Statistic(payload);
 }

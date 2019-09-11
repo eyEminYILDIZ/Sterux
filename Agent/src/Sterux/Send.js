@@ -29,7 +29,7 @@ function AddSendQueue(sendUrl, payload) {
 
     payload.url = window.location.pathname;
     payload.steruxClientId = getSteruxClientIdCookie();
-    payload.dateTime = new Date().toLocaleString("tr-TR");
+    payload.dateTime =new Date().toJSON();
 
     sendingJob = { url: sendUrl, payload: payload };
     sendQueue.push(sendingJob);

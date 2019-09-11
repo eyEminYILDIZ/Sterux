@@ -1,0 +1,20 @@
+{
+  "name": "sterux.house",
+  "version": "1.0.0",
+  "description": "STERUX.House is part of STERUX(Statistic, Error and User Experience Tool)",
+  "main": "input.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Emin Yıldız",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "easy-elasticsearch": "^1.2.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
