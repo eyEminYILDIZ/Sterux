@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "485e7c56-5fba-41fe-ab83-dbfb28e71642",
+		"name": "STERUX.House.Output",
+		"description": "House.Output APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api?collectionName=statistic&startDate=2019-09-05T10:26:36.161Z&endDate=2019-09-12T10:26:36.161Z&type=count",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api"
+					],
+					"query": [
+						{
+							"key": "collectionName",
+							"value": "statistic",
+							"description": "for selecting collection"
+						},
+						{
+							"key": "startDate",
+							"value": "2019-09-05T10:26:36.161Z",
+							"description": "data start date"
+						},
+						{
+							"key": "endDate",
+							"value": "2019-09-12T10:26:36.161Z",
+							"description": "data end date"
+						},
+						{
+							"key": "type",
+							"value": "count",
+							"description": "count or data"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

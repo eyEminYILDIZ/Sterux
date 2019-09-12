@@ -1,6 +1,6 @@
 var easyElasticSearch = require("easy-elasticsearch");
 
-var uxInputOperations = {
+var errorInputOperations = {
 
     errorIndexClient: easyElasticSearch.CreateIndexClient({
         host: 'localhost:9200',
@@ -25,4 +25,4 @@ var uxInputOperations = {
     },
 }
 
-module.exports = uxInputOperations;
+module.exports = errorInputOperations;
